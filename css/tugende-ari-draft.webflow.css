@@ -255,6 +255,7 @@ a {
   color: #000;
   background-color: #fff;
   font-family: Public Sans, sans-serif;
+  overflow: visible;
 }
 
 .heading {
@@ -808,6 +809,7 @@ a {
   padding-left: 10vw;
   padding-right: 0;
   position: relative;
+  overflow: visible;
 }
 
 .feature-wrap {
@@ -1596,6 +1598,7 @@ a {
   padding-top: 5vh;
   padding-bottom: 5vh;
   display: flex;
+  overflow: hidden;
 }
 
 .greeting-section.center {
@@ -1756,6 +1759,7 @@ a {
   align-items: center;
   padding: 60px 0% 150px;
   display: flex;
+  overflow: hidden;
 }
 
 .section-faq.outside-main {
@@ -2264,6 +2268,7 @@ a {
   padding-top: 0;
   line-height: 0;
   display: flex;
+  overflow: hidden;
 }
 
 .div-block-hero-text.aboutusdiv {
@@ -2300,7 +2305,7 @@ a {
   bottom: auto;
   left: 50vw;
   right: 0%;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .navbar {
@@ -2422,6 +2427,7 @@ a {
   justify-content: center;
   align-items: center;
   display: flex;
+  overflow: hidden;
 }
 
 .text-heading {
@@ -2538,7 +2544,8 @@ a {
 }
 
 .text-heading.safety {
-  margin-bottom: 0;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .text-heading.safety-page {
@@ -2752,6 +2759,7 @@ a {
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   display: flex;
+  overflow: hidden;
 }
 
 .underline-span {
@@ -2768,6 +2776,7 @@ a {
   min-height: 80svh;
   background-color: #fff;
   padding-top: 55px;
+  overflow: hidden;
 }
 
 .text-block-7 {
@@ -2875,6 +2884,7 @@ a {
   background-color: #fff;
   padding-top: 10vh;
   padding-bottom: 10vh;
+  overflow: hidden;
 }
 
 .section-call-to-action {
@@ -2882,6 +2892,7 @@ a {
   min-width: 0;
   background-color: var(--black);
   text-align: center;
+  overflow: hidden;
 }
 
 .heading-call-to-action {
@@ -3588,6 +3599,7 @@ a {
   justify-content: center;
   align-items: center;
   display: flex;
+  overflow: hidden;
 }
 
 .safety-section.page {
@@ -6047,6 +6059,9 @@ a {
 
   .text-heading.safety {
     width: 80%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 23px;
   }
 
   .text-heading.safety-page {
