@@ -469,18 +469,19 @@ a {
 }
 
 .button.steps-button {
+  flex: 0 auto;
   margin-top: 30px;
   margin-left: 80px;
   font-family: Ubuntu, Helvetica, sans-serif;
 }
 
-.button.calltoaction2 {
+.button.calltoaction3 {
   background-color: var(--dark-purple-pink);
   font-family: Ubuntu, Helvetica, sans-serif;
   font-size: 17px;
 }
 
-.button.calltoaction2:hover {
+.button.calltoaction3:hover {
   color: #fff;
   background-color: #7f3aef;
 }
@@ -1111,7 +1112,17 @@ a {
   background-color: var(--black);
 }
 
-.container, .field-label, .field-label-2, .field-label-3 {
+.container {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+  display: flex;
+}
+
+.field-label, .field-label-2, .field-label-3 {
   color: var(--white);
 }
 
@@ -2314,12 +2325,29 @@ a {
   justify-content: space-between;
   align-items: stretch;
   margin: 0;
-  padding: 25px 60px 25px 40px;
-  text-decoration: none;
+  padding: 13px 60px 13px 40px;
   display: flex;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+
+.navbar.right {
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  display: flex;
+  position: static;
+}
+
+.navbar.left {
+  flex: 0 auto;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  display: flex;
+  position: static;
 }
 
 .navlogo {
@@ -2347,9 +2375,8 @@ a {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  text-decoration: none;
   display: flex;
 }
 
@@ -2357,7 +2384,7 @@ a {
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   flex: 0 auto;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-self: center;
   align-items: center;
   display: flex;
@@ -2551,6 +2578,13 @@ a {
 .text-heading.safety-page {
   text-align: center;
   font-size: 1.8rem;
+}
+
+.text-heading.navbar-logo {
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .flex-block-sender {
@@ -3088,7 +3122,18 @@ a {
   text-decoration: none;
 }
 
-.link-block.tugende-logo, .link-block-how-it-works, .link-block-faq, .link-block-about-us {
+.link-block.tugende-logo {
+  text-decoration: none;
+}
+
+.link-block.tugende-logo.w--current {
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  display: block;
+}
+
+.link-block-how-it-works, .link-block-faq, .link-block-about-us {
   text-decoration: none;
 }
 
@@ -3814,6 +3859,142 @@ a {
   text-decoration: underline;
 }
 
+.image-406 {
+  width: 50px;
+  opacity: 1;
+  margin-right: 10px;
+}
+
+.div-block-405 {
+  align-items: center;
+  display: flex;
+}
+
+.div-block-406 {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.image-tugende-logo {
+  width: 50px;
+  margin-right: 10px;
+  padding-right: 0;
+}
+
+.div-block-tugende-logo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.navbar-2 {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 40px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.navbar-links {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.navbar-links:hover {
+  color: var(--black);
+  text-decoration: underline;
+}
+
+.navbar-links.mobile-only {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbuttons {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container-2 {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+}
+
+.nav-menu-3 {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-container {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: space-between;
+  align-items: center;
+  display: block;
+}
+
+.navigation-bar {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.nav-div.left, .nav-div.right {
+  align-items: center;
+  display: flex;
+}
+
+.brand-2 {
+  padding-right: 10px;
+}
+
+.brand-2.w--current {
+  padding-right: 15px;
+}
+
+.navbar-3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.link-block-2 {
+  align-items: center;
+  display: flex;
+}
+
+.noccrequiredallbutmobile {
+  display: inline;
+}
+
+.noccrequiredmobileonly {
+  color: var(--black);
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   h2 {
     font-size: 34px;
@@ -3874,7 +4055,7 @@ a {
     font-size: 15px;
   }
 
-  .button.calltoaction2, .button.faq {
+  .button.calltoaction3, .button.faq {
     font-size: 15px;
   }
 
@@ -4100,7 +4281,13 @@ a {
   }
 
   .navbar {
-    padding: 15px 20px;
+    padding: 15px 30px;
+  }
+
+  .navbar.right {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .navoption {
@@ -4218,6 +4405,10 @@ a {
   .text-heading.safety-page {
     text-align: center;
     margin-bottom: 10px;
+  }
+
+  .text-heading.navbar-logo {
+    margin-top: 0;
   }
 
   .flex-block-sender {
@@ -4465,7 +4656,7 @@ a {
   }
 
   .div-block-resize-text {
-    width: 100%;
+    width: 80%;
   }
 
   .image-404 {
@@ -4573,6 +4764,31 @@ a {
   .faq-tab-link-text {
     text-align: center;
   }
+
+  .div-block-406 {
+    align-items: center;
+  }
+
+  .div-block-tugende-logo {
+    height: 100%;
+    align-items: center;
+  }
+
+  .navbar-links.mobile-only {
+    height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .nav-menu-3 {
+    align-items: center;
+    display: block;
+  }
+
+  .noccrequiredallbutmobile {
+    display: inline;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -4637,7 +4853,7 @@ a {
   }
 
   .button.calltoaction1 {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .button.steps-button {
@@ -4646,8 +4862,8 @@ a {
     font-size: 13px;
   }
 
-  .button.calltoaction2 {
-    font-size: 13px;
+  .button.calltoaction3 {
+    font-size: 15px;
   }
 
   .footer-wrap {
@@ -4669,7 +4885,9 @@ a {
   }
 
   .hero-content {
+    flex-direction: column;
     margin-bottom: 5vh;
+    display: flex;
   }
 
   .feature-wrap {
@@ -4782,7 +5000,7 @@ a {
   }
 
   .greeting-section {
-    min-height: 50svh;
+    min-height: 100svh;
   }
 
   .greeting-section.center {
@@ -4967,12 +5185,29 @@ a {
   }
 
   .image-plane {
-    opacity: 0;
+    aspect-ratio: auto;
+    opacity: 1;
+    margin-bottom: 5%;
+    position: static;
+    top: 0;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    overflow: hidden;
+  }
+
+  .navbar {
+    height: 5%;
+    padding: 15px 20px;
   }
 
   .navoption {
     max-width: 0;
     color: #fff;
+  }
+
+  .navbarright {
+    margin-right: 0;
   }
 
   .flex-block-hero {
@@ -4999,6 +5234,10 @@ a {
     background-color: #fff;
     border-radius: 15px;
     position: fixed;
+    top: 10%;
+    bottom: auto;
+    left: auto;
+    right: 0%;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
   }
@@ -5110,6 +5349,10 @@ a {
     margin-bottom: 10px;
     font-size: 1.6rem;
     line-height: 40px;
+  }
+
+  .text-heading.navbar-logo {
+    margin-top: 0;
   }
 
   .flex-block-sender {
@@ -5497,6 +5740,49 @@ a {
   .tab-link-tab-2, .tab-link-tab-1, .tab-link-tab-1.w--current {
     border-radius: 80px;
   }
+
+  .div-block-406 {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .image-tugende-logo {
+    width: 40px;
+  }
+
+  .div-block-tugende-logo {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-links {
+    background-color: #e0e3e5;
+    padding-left: 20px;
+  }
+
+  .menu-button-2 {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 17px;
+    padding: 5px;
+  }
+
+  .menu-button-2.w--open {
+    color: #000;
+    background-color: #e0e3e5;
+    border-radius: 10px;
+    margin-left: 16px;
+    padding: 5px;
+  }
+
+  .noccrequiredallbutmobile {
+    display: none;
+  }
+
+  .noccrequiredmobileonly {
+    display: inline;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -5557,6 +5843,7 @@ a {
 
   .button.mobile-button.appearmobile {
     text-align: center;
+    font-size: 15px;
   }
 
   .button.ship-button {
@@ -5571,13 +5858,27 @@ a {
     font-size: 14px;
   }
 
-  .button.buttonhollow.calltoactionbutton2, .button.calltoaction1 {
+  .button.buttonhollow.calltoactionbutton2 {
     margin-left: 0%;
     font-size: 13px;
   }
 
+  .button.calltoaction1 {
+    margin-left: 0%;
+    font-size: 14px;
+  }
+
   .button.steps-button {
     font-size: 14px;
+  }
+
+  .button.calltoaction3 {
+    background-color: var(--dark-purple-pink);
+    font-size: 14px;
+  }
+
+  .button.safetycalltoaction {
+    font-size: 18px;
   }
 
   .footer-wrap {
@@ -5609,6 +5910,7 @@ a {
   .hero-content {
     margin-bottom: 0;
     padding-bottom: 0;
+    padding-left: 3vw;
   }
 
   .feature-wrap, .feature-wrap.reverse {
@@ -5929,7 +6231,22 @@ a {
   }
 
   .navbar {
+    width: 100svw;
+    height: 7%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     overflow: hidden;
+  }
+
+  .navbarleft {
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-content: flex-start;
+  }
+
+  .navbarright {
+    width: 0;
   }
 
   .flex-block-hero {
@@ -5941,8 +6258,17 @@ a {
     opacity: 0;
   }
 
+  .navbutton.button.w--current {
+    width: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .navbutton.button.buttonhollow {
+    width: 0;
     opacity: 0;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 15px;
     line-height: 20px;
   }
@@ -5952,13 +6278,17 @@ a {
   }
 
   .navbutton.button.buttonhollow.safety {
+    width: auto;
     opacity: 1;
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 14px;
   }
 
   .dropdown-menu {
     min-width: 100%;
     position: fixed;
+    top: 15%;
     overflow: hidden;
   }
 
@@ -6033,6 +6363,11 @@ a {
   .text-heading.courier.subheading {
     text-align: center;
     font-size: 20px;
+  }
+
+  .text-heading.hero-heading {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
   }
 
   .text-heading._404 {
@@ -6470,6 +6805,41 @@ a {
 
   .tabs-menu-2 {
     flex-direction: column;
+  }
+
+  .image-405 {
+    color: #000;
+  }
+
+  .image-406 {
+    width: 40px;
+  }
+
+  .div-block-406 {
+    align-items: center;
+  }
+
+  .image-tugende-logo {
+    height: auto;
+  }
+
+  .navbar-links.mobile-only {
+    width: auto;
+    height: auto;
+    opacity: 1;
+    padding: 20px 10px 20px 20px;
+  }
+
+  .navbuttons {
+    width: 0;
+  }
+
+  .text-block-13 {
+    color: var(--black);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
   }
 }
 
