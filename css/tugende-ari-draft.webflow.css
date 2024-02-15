@@ -5757,7 +5757,7 @@ a {
   }
 
   .navbar-links {
-    background-color: #e0e3e5;
+    background-color: rgba(239, 239, 239, .97);
     padding-left: 20px;
   }
 
@@ -5770,7 +5770,7 @@ a {
 
   .menu-button-2.w--open {
     color: #000;
-    background-color: #e0e3e5;
+    background-color: rgba(224, 227, 229, .27);
     border-radius: 10px;
     margin-left: 16px;
     padding: 5px;
@@ -6833,6 +6833,11 @@ a {
   .navbuttons {
     width: 0;
   }
+
+  .menu-button-2.w--open {
+    background-color: rgba(239, 239, 239, .97);
+  }
+
 
   .text-block-13 {
     color: var(--black);
