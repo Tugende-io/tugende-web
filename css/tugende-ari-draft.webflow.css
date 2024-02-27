@@ -847,11 +847,13 @@ a {
   min-height: auto;
   aspect-ratio: auto;
   color: var(--white);
+  flex-direction: column;
   flex: 1;
   margin-top: auto;
-  padding-bottom: 15%;
+  padding-bottom: 0%;
   padding-left: 10vw;
   padding-right: 0;
+  display: block;
   position: relative;
   overflow: visible;
 }
@@ -1650,7 +1652,7 @@ a {
   justify-content: center;
   align-items: center;
   padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-bottom: 0;
   display: flex;
   overflow: hidden;
 }
@@ -2438,7 +2440,7 @@ a {
   grid-row-gap: 0px;
   flex-direction: column;
   align-items: flex-start;
-  position: relative;
+  position: static;
   top: 100px;
 }
 
@@ -3708,6 +3710,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
   display: flex;
   overflow: hidden;
 }
@@ -4066,11 +4069,10 @@ a {
 }
 
 .calculator-section {
-  min-height: 80vh;
   color: #000;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 10%;
+  padding-bottom: 0%;
   font-family: Public Sans, sans-serif;
   display: block;
 }
@@ -4081,6 +4083,13 @@ a {
   justify-content: center;
   align-items: flex-start;
   display: flex;
+}
+
+.form-calculator.calculator.static {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
 }
 
 .calculatordropdown {
@@ -4148,15 +4157,16 @@ a {
 }
 
 .div-block.price-wrapper {
+  color: var(--black);
   flex-direction: column;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 15px;
   margin-bottom: 5%;
   display: flex;
 }
 
 .div-block.shipping-company {
-  width: 100%;
+  width: 90%;
   grid-column-gap: 5%;
   grid-row-gap: 5%;
   background-color: rgba(239, 239, 239, .92);
@@ -4215,11 +4225,14 @@ a {
 }
 
 .form-block-calculator {
-  min-height: 20vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .44);
   flex-direction: column;
   justify-content: center;
-  margin-top: 5%;
+  align-items: flex-start;
+  margin-top: 40px;
   display: flex;
+  position: static;
 }
 
 .div-block-shipping-options {
@@ -4293,6 +4306,10 @@ a {
 
 .div-block-flex-horizontal.hero {
   align-items: flex-start;
+}
+
+.div-block-flex-horizontal.ship-prices {
+  align-items: center;
 }
 
 .shipping-company-logo {
@@ -4401,6 +4418,10 @@ a {
 
   .button.calltoaction3, .button.faq {
     font-size: 15px;
+  }
+
+  .button.calculator-button {
+    font-size: 16px;
   }
 
   .footer-wrap {
@@ -4755,6 +4776,10 @@ a {
     margin-top: 0;
   }
 
+  .text-heading.shipping-company {
+    font-size: 18px;
+  }
+
   .flex-block-sender {
     flex-direction: row;
   }
@@ -4853,8 +4878,13 @@ a {
     padding-left: 0;
   }
 
-  .text-block-learn-more, .text-block-learn-more.courier-button {
+  .text-block-learn-more {
     margin-left: 10px;
+  }
+
+  .text-block-learn-more.courier-button {
+    margin-left: 10px;
+    text-decoration: underline;
   }
 
   .ship-section {
@@ -5051,6 +5081,10 @@ a {
     font-size: 16px;
   }
 
+  .text-paragraph.calculator-label {
+    font-size: 15px;
+  }
+
   .flex-block-faq.main {
     padding-left: 20px;
     padding-right: 20px;
@@ -5135,9 +5169,29 @@ a {
     display: inline;
   }
 
+  .div-block.shipping-company {
+    width: 100%;
+  }
+
+  .shipping-cost {
+    font-size: 20px;
+  }
+
+  .shipping-cost.subtext {
+    font-size: 13px;
+  }
+
   .div-block-flex-horizontal.hero {
     flex-direction: row;
     align-items: flex-start;
+  }
+
+  .div-block-flex-horizontal.ship-prices {
+    align-items: center;
+  }
+
+  .shipping-time {
+    font-size: 14px;
   }
 
   .div-block-413 {
@@ -5220,6 +5274,12 @@ a {
     font-size: 15px;
   }
 
+  .button.shipping-calc.tugende {
+    border-radius: 10px;
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+
   .footer-wrap {
     width: 100%;
     max-width: none;
@@ -5240,7 +5300,7 @@ a {
 
   .hero-content {
     flex-direction: column;
-    margin-bottom: 5vh;
+    margin-bottom: 0;
     display: flex;
   }
 
@@ -5710,6 +5770,10 @@ a {
     margin-top: 0;
   }
 
+  .text-heading.shipping-company {
+    font-size: 16px;
+  }
+
   .flex-block-sender {
     grid-column-gap: 0rem;
     grid-row-gap: 0rem;
@@ -5809,8 +5873,9 @@ a {
   }
 
   .div-block-steps-heading.courier-div {
-    align-items: center;
+    align-items: flex-end;
     margin-right: 20px;
+    display: flex;
   }
 
   .image-sender {
@@ -5836,6 +5901,7 @@ a {
   }
 
   .flex-button-block.mobile-courier {
+    flex-direction: column;
     justify-content: flex-end;
   }
 
@@ -5985,6 +6051,10 @@ a {
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     padding: 0% 10px;
+  }
+
+  .div-block-resize-text {
+    width: 100%;
   }
 
   .image-404 {
@@ -6144,6 +6214,57 @@ a {
     display: inline;
   }
 
+  .form-calculator.calculator.static {
+    min-height: 50vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calculator-dropdown {
+    width: 80vw;
+  }
+
+  .shipping-cost {
+    font-size: 15px;
+  }
+
+  .shipping-cost.subtext {
+    width: 60px;
+    word-break: normal;
+    overflow-wrap: normal;
+    font-size: 10px;
+  }
+
+  .div-block-flex.shipping-company {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .div-block-flex-horizontal.ship-prices {
+    align-items: center;
+  }
+
+  .shipping-company-logo {
+    width: 40px;
+  }
+
+  .div-block-409 {
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+
+  .shipping-time {
+    font-size: 10px;
+  }
+
+  .shipping-link {
+    font-size: 12px;
+  }
+
+  .form-field.select._w-select {
+    width: 80vw;
+  }
+
   .italic-text {
     font-size: 14px;
   }
@@ -6252,6 +6373,12 @@ a {
 
   .button.safetycalltoaction {
     font-size: 18px;
+  }
+
+  .button.shipping-calc.tugende {
+    width: 30%;
+    margin-top: 10px;
+    font-size: 14px;
   }
 
   .footer-wrap {
@@ -7219,8 +7346,56 @@ a {
     font-weight: 500;
   }
 
-  .text-field-5, .text-field-6 {
+  .calculator-section {
+    padding-bottom: 5%;
+  }
+
+  .form-calculator.calculator.static {
+    min-height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .calculator-dropdown {
+    width: 80vw;
+  }
+
+  .text-field-5 {
     max-width: 5rem;
+  }
+
+  .div-block.price-wrapper {
+    margin-bottom: 10%;
+  }
+
+  .div-block.shipping-company {
+    flex-direction: column;
+  }
+
+  .text-field-6 {
+    max-width: 5rem;
+  }
+
+  .shipping-cost {
+    font-size: 17px;
+  }
+
+  .shipping-cost.subtext {
+    font-size: 11px;
+  }
+
+  .shipping-time {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .shipping-link {
+    font-size: 12px;
+  }
+
+  .form-field.select._w-select {
+    width: 80vw;
   }
 
   .italic-text {
